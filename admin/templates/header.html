@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{appname}}</title>
+	<link href="templates/css/bootstrap.min.css" rel="stylesheet">
+	<link href="templates/css/jquery-ui.min.css" rel="stylesheet">
+	<link href="templates/css/lobipanel.min.css" rel="stylesheet">
+	<link href="templates/datatables/datatables.min.css" rel="stylesheet">
+	<link href="templates/css/nprogress.css" rel="stylesheet">
+	<link href="templates/css/bootstrap-switch.min.css" rel="stylesheet">
+	<link href="templates/css/bootstrap-select.min.css" rel="stylesheet">
+	<link href="templates/css/jquery.datetimepicker.css" rel="stylesheet">
+	<link href="templates/summernote/summernote.css" rel="stylesheet">
+	<link href="templates/css/pnotify.custom.min.css" rel="stylesheet">
+	<link href="templates/css/bootstrap-tagsinput.css" rel="stylesheet">
+	<link href="templates/css/style.css?2" rel="stylesheet" type="text/css" media="screen">
+	<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<script>
+		{{beforebody}}
+	</script>
+  </head>
+  <body>
+	<div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <nav class="row navbar navbar-default">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1"><span class="sr-only">Navigacija</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                <a class="navbar-brand" href="./">{{appname}}</a></div>
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="defaultNavbar1">
+              	{{mainmenu}}
+                 <ul class="nav navbar-nav navbar-right">
+					<!--<li><a href="./?show=chat">Chat</a></li>-->
+                  <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{korisnik}}<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="./?logout"><script>document.write(p("Odjavi se"))</script></a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+          </nav>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+        	
+<div class="modal fade addnewmodal" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">
+					<span aria-hidden="true">×</span>
+				</button>
+				<h4 class="modal-title"><script>document.write(p("Dodaj novi zapis"))</script></h4>
+			</div>
+			<div class="modal-body"></div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">
+					<script>document.write(p("Zatvori"))</script>
+				</button>
+				<button id="addnewformsave" type="button" class="btn btn-primary">
+					<script>document.write(p("Sačuvaj promene"))</script>
+				</button>
+			</div>
+
+		</div>
+	</div>
+</div>
+<div class="modal fade editmodal" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">
+					<span aria-hidden="true">×</span>
+				</button>
+				<h4 class="modal-title"><script>document.write(p("Izmeni zapis"))</script></h4>
+			</div>
+			<div class="modal-body"></div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">
+					<script>document.write(p("Zatvori"))</script>
+				</button>
+				<button id="editformsave" type="button" class="btn btn-warning">
+					<script>document.write(p("Sačuvaj promene"))</script>
+				</button>
+			</div>
+
+		</div>
+	</div>
+</div>
+<div class="modal fade duplmodal" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">
+					<span aria-hidden="true">×</span>
+				</button>
+				<h4 class="modal-title"><script>document.write(p("Dodaj predefinisan zapis"))</script></h4>
+			</div>
+			<div class="modal-body"></div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">
+					<script>document.write(p("Zatvori"))</script>
+				</button>
+				<button id="duplformsave" type="button" class="btn btn-info">
+					<script>document.write(p("Sačuvaj promene"))</script>
+				</button>
+			</div>
+
+		</div>
+	</div>
+</div>
+<div id="detalj" style="width:99%; height:95%;"><button class="btn btn-danger btn-xs b-close" style="position: absolute; top: 0px; right: 0px;">X</button><div class="sadrzaj">
+	<div class="tabbable" id="tabovi"></div>
+</div></div>

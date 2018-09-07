@@ -1,0 +1,9 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /strayed/
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^imgdb/(.*)$ slika.php?slika=$1 [L]
+    RewriteRule ^thumbs/(.*)$ slika.php?resizeH=70&slika=$1 [L]
+    RewriteRule ^preview/(.*)$ slika.php?resize=300&slika=$1 [L]
+</IfModule>

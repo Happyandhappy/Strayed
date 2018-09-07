@@ -1,0 +1,36 @@
+﻿Administration==Administracija
+Users==Korisnici
+Sign out==Odjava
+ID==IB
+Name==Naziv
+Groups==Grupe
+Group==Grupa
+Username==Korisničko ime
+Password==Lozinka
+Captcha==Kod sa slike
+Login==Prijava
+Incorrect Captcha!==Neispravan sigurnosni kod sa slike!
+Login credentials do not match any account!==Uneti podaci ne odgovaraju nijednom korisniku!
+You have not been here longer then ==Niste bili prisutni duže od 
+ minutes.<br>Your session is expired!== minuta.<br>Vaša sesija je istekla!
+Logout==Odjava
+Functions==Operacije
+Remove==Obriši
+Edit==Izmeni
+Add==Dodaj
+Yes==Da
+No==Ne
+Insert success==Podaci su uspešno uneti u bazu
+You have no rights to append data in this table!==Nemate prava da vršite upis podataka u ovoj tabeli!
+Insert failed!==Neuspešan unos!
+Update success==Podaci su uspešno promenjeni
+You have no rights to update data in this table!==Nemate prava da vršite izmene podataka u ovoj tabeli!
+Update failed!==Neuspešna izmena!
+Delete success==Podatak je uspešno obrisan
+You have no rights to delete data from this table!==Nemate prava da brišete podatke iz ove tabele!
+Download file==Preuzmi datoteku
+No file==Nema datoteke
+No image==Nema slike
+You do not have sufficient permissions to access this page!==Nemate dozvolu da pristupite ovoj stranici!
+There is no table with such name!==Ne postoji tabela sa ovim imenom!
+Data are hidden==Podatak je skriven

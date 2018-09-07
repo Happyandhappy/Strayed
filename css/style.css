@@ -1,0 +1,187 @@
+html, body{
+	height: 100%;
+    width: 100%;
+}
+#map {
+	height: 100%;
+	width: 100%;
+}
+#previewmap{
+	height:250px;
+}
+#google_translate_element{
+	position: absolute;
+	top: 10px;
+	right: 50px;
+	z-index: 9000;
+}
+#maindiv{
+	width:200px;
+	background-color: white;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    padding: 5px;
+    box-shadow: 1px 1px 1px grey;
+	z-index:9000;
+}
+#maindivbtnS,#maindivbtnH,#bottombtnS,#bottombtnH{
+	background-color: white;
+    color: black;
+    font-weight: bold;
+    border: 1px solid gray;
+	border-radius: 0;
+	width:40px!important;
+	border: 0;
+    box-shadow: 1px 1px 1px grey;
+}
+#maindivbtnS, #maindivbtnH{
+	position: absolute;
+	right: -40px;
+	top: 0px;
+}
+#maindivbtnS{
+	display:none;
+}
+.daterangepicker {
+	z-index:9001!important;
+}
+#bottombtnS, #bottombtnH{
+	position: absolute;
+    left: 0px;
+    bottom: 125px;
+}
+#bottombtnS{
+	bottom:30px;
+    display: none;
+}
+#addnewbtn{
+	width: 100%;
+    margin-top: 20px;
+}
+#addnewbtnF{
+	position:absolute;
+	bottom:45px;
+	left:10px;
+	cursor:pointer;
+	z-index:9000;
+}
+#addnewbtnF:hover{
+	filter: grayscale(100%);
+}
+#images{
+	background-color: white;
+    position: absolute;
+    bottom: 30px;
+    left: 0px;
+	right: 50px;
+    padding: 5px;
+    box-shadow: 1px 1px 1px grey;
+	overflow-x: scroll;
+	white-space: nowrap;
+	height:95px;
+	max-height:95px;
+	z-index:9000;
+}
+#images img{
+    max-height: 70px;
+	margin-right:5px;
+	cursor:pointer;
+    filter: sepia(0%) drop-shadow(0px 0px 1px black);
+    -webkit-transition: filter 0.2s;
+    transition: filter 0.2s;
+}
+#images img:hover{
+    filter: sepia(90%) drop-shadow(5px 5px 2px gray);
+}
+.toggle{
+	float:right;
+}
+.holder{
+	max-height: 300px;
+    text-align: center;
+    width: 300px;
+    min-width: 100%;
+    margin-top: 10px;
+}
+.holder img{
+	max-height: 200px;
+	max-width: 100%!important;
+}
+#addnewmodal{
+	z-index:9000;
+}
+#image_preview{
+	text-align:center;
+	display:block;
+}
+#image_preview img{
+	width:100%;
+	height:auto;
+}
+#loading{
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	background-color: white;
+	text-align: center;
+	padding-top: 300px;
+}
+.list-group-item img{
+	height:20px!important;
+}
+.gm-style-iw>div{
+	border: 1px solid #ddd;
+    padding: 5px;
+}
+.modal-backdrop{
+	z-index:9001!important;
+}
+#addnewmodal{
+	z-index:9002!important;
+}
+.bootstrap-dialog{
+	z-index:9002!important;
+}
+.bootstrap-dialog img{
+	max-width:100%;
+}
+.imagepreview .modal-dialog {
+	max-height:100%;
+}
+#newfullimage{
+	cursor:pointer;
+}
+.bootstrap-dialog-message{
+	text-align:center;
+}
+
+
+
+
+
+
+
+
+::-webkit-scrollbar {
+    width: 10px;
+	height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
